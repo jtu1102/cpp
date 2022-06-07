@@ -6,7 +6,7 @@
 /*   By: soahn <soahn@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 03:32:41 by soahn             #+#    #+#             */
-/*   Updated: 2022/06/06 05:55:59 by soahn            ###   ########.fr       */
+/*   Updated: 2022/06/07 01:57:10 by soahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define CONTACT_HPP
 
 #include <iostream>
-#include <iomanip>
 
 class Contact {
 	private:

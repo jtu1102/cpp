@@ -6,7 +6,7 @@
 /*   By: soahn <soahn@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 03:19:22 by soahn             #+#    #+#             */
-/*   Updated: 2022/06/06 05:38:14 by soahn            ###   ########.fr       */
+/*   Updated: 2022/06/07 01:54:09 by soahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,10 @@ int	main(void) {
 		std::getline(std::cin, in); //getline으로 표준 입력을 받아서 in에 저장
 		if (in == "EXIT")
 			return (0);
-		else if (in == "ADD")
+		else if (in == "ADD") {
 			phonebook.add(i++);
 			i %= 8;
+		}
 		else if (in == "SEARCH")
 			phonebook.search();
 	}

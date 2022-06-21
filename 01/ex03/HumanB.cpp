@@ -1,10 +1,10 @@
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name): name(name), _weapon(nullptr) {}
+HumanB::HumanB(std::string name): _weapon(nullptr), name(name) {}
 
 HumanB::~HumanB() {}
 
-void    HumanB::attack() {
+void    HumanB::attack() const {
 
     if (this->_weapon) {
         std::cout << this->name << " attacks with his " << this->_weapon->getType() << std::endl;

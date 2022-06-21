@@ -1,9 +1,13 @@
 #include "Weapon.hpp"
 
-std::string& Weapon::getType() {
-    return &(this->type);
+Weapon::Weapon(std::string type): type(type) {} // 생성자
+
+Weapon::~Weapon() {}
+
+const    std::string& Weapon::getType() const {
+    return this->type;
 }
 
-void Weapon::setType(std::string arg) {
+void Weapon::setType(const std::string& arg) {
     this->type = arg;
 }
